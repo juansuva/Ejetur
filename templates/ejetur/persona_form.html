@@ -2,9 +2,10 @@
 
 
 {% block contenido %}
-<form method="post" accept-charset="utf-8">
+<form class="btn btn-light" method="post" accept-charset="utf-8">
 	{% csrf_token %}
 	{{ form.as_p}}
-	<<button type="submit"></button>
+	<button class="btn btn-lg btn-light" type="submit">Registrar</button>
+	<button class="btn btn-lg btn-dark" type="submit">Cancel</button>
 </form>
 {% endblock %}
