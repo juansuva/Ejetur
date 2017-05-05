@@ -1,0 +1,10 @@
+{% extends 'base/base.html'%}
+
+
+{% block contenido %}
+<form method="post" accept-charset="utf-8">
+	{% csrf_token %}
+	{{ form.as_p}}
+	<<button type="submit"></button>
+</form>
+{% endblock %}

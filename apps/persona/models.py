@@ -1,4 +1,6 @@
 from django.db import models
+from apps.generos.models import Genero
+from apps.interes.models import Interes
 
 # Create your models here.
 class Persona(models.Model):
@@ -11,7 +13,8 @@ class Persona(models.Model):
 	prioridad =models.IntegerField()
 	email =models.EmailField()
 	edad =models.IntegerField()
-	sexo =models.CharField(max_length=10)
+	sexo =models.OneToOneField(Genero, null=True , blank=True, on_delete=models.CASCADE)
 	estado =models.IntegerField()
 	solicitud =models.IntegerField()
 	password =models.CharField(max_length=30)
+	intereses =models.ForeignKey(Interes, null=True, blank=True, on_delete=models.CASCADE)
