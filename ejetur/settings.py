@@ -143,6 +143,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = ''
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+
 TEMPLATE_DIRS = (os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static', 'templates'),)
 
 ACCOUNT_ACTIVATION_DAYS = 7
@@ -155,5 +156,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'ejetur17@gmail.com'
 EMAIL_HOST_PASSWORD = '108831701.'
 EMAIL_USE_TLS = True
-
 

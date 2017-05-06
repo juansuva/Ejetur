@@ -1,11 +1,20 @@
 {% extends 'base/base.html'%}
 
 
+<<<<<<< HEAD
 {% block content %}
 <form class="btn btn-lg btn-dark" method="post" accept-charset="utf-8">
 	{% csrf_token %}
 	{{ form.as_p}}
 	<button  class="btn btn-light" type="submit">Registrar</button>
 	<button  class="btn btn-dark" type="submit">Cancelar</button>
+=======
+{% block contenido %}
+<form class="btn btn-light" method="post" accept-charset="utf-8">
+	{% csrf_token %}
+	{{ form.as_p}}
+	<button class="btn btn-lg btn-light" type="submit">Registrar</button>
+	<button class="btn btn-lg btn-dark" type="submit">Cancel</button>
+>>>>>>> origin/master
 </form>
 {% endblock %}
