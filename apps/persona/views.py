@@ -8,14 +8,19 @@ from django.core.urlresolvers import reverse
 def index(request):
 	return HttpResponse("Index")
 
+def index2(request):
+	return HttpResponse("Index2")
+
 
 def persona_view(request):
 	if request.method == 'POST':
 		form=PersonaForms(request.POST)
 		if form.is_valid():
 			form.save()
-			reverse
-		return redirect('personal:index')
+			return redirect('persona:index')
+		else:
+			form=PersonaForms()
+			return redirect('persona:index2')
 	else:
 		form=PersonaForms()
 
