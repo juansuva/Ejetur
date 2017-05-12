@@ -150,7 +150,7 @@ ACCOUNT_ACTIVATION_DAYS = 7
 
 
 
-# Email related stuff
+# Email related 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'ejetur17@gmail.com'
 EMAIL_HOST_PASSWORD = '1088318701.'
