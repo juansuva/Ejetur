@@ -57,5 +57,5 @@ class PersonaForms(forms.ModelForm):
 			'estado':forms.NumberInput(attrs={'class':'form-control'}),
 			'solicitud':forms.NumberInput(attrs={'class':'form-control'}),
 			'password':forms.TextInput(attrs={'class':'form-control'}),
-			'intereses':forms.CheckboxSelectMultipl(),
+			'intereses':forms.CheckboxSelectMultiple(),
 		}
