@@ -6,21 +6,22 @@ https://github.com/huseyinyilmaz/django-registration-extended-backend
 {% endcomment %}
 {% url 'registration_activate' activation_key as activation_key_url %}
 {% blocktrans with sitename=site.name sitedomain=site.domain%}<body>
-<h3>Account registration for {{ sitename }}</h3>
+<h3>Registro de cuenta para {{ sitename }}</h3>
 <p>
-You (or someone pretending to be you) have asked to register an account at
+  Usted (o alguien que pretende ser usted) ha pedido que registre una cuenta en
 <b>{{ sitename }}</b>.<br/>
-If this wasn't you, please ignore this email and your address will be removed
-from our records.
+Si este no fuera usted, por favor ignore este correo electrónico y su dirección será eliminada.
+De nuestros registros.
 </p>
 <p>
-To activate this account, please click the following link within the next 
-<b>{{ expiration_days }}</b> days:<br/>
+
+Para activar esta cuenta, haga clic en el siguiente enlace dentro de los siguientes
+<b>{{ expiration_days }}</b> dias:<br/>
 <a href="http://{{ sitedomain }}{{ activation_key_url }}">http://{{ sitedomain }}{{  activation_key_url }}</a>
 </p>
 <p>
-Sincerely,<br/>
-{{ sitename }} Management
+Sinceramente,<br/>
+{{ sitename }} Administrador
 </p>
 </body>
 {% endblocktrans %}

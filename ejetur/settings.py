@@ -76,6 +76,7 @@ TEMPLATES = [
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
+            'debug': DEBUG,
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -143,15 +144,18 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = ''
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
-TEMPLATE_DIRS = (os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static', 'templates'),)
+#TEMPLATE_DIRS = (os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static', 'templates'),)
 
 ACCOUNT_ACTIVATION_DAYS = 7
 
 
 
 
-# Email related 
+# Email related
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'ejetur17@gmail.com'
 EMAIL_HOST_PASSWORD = '1088318701.'
 EMAIL_USE_TLS = True
+EMAIL_PORT=587
+
+LOGIN_REDIRECT_URL = '/per'

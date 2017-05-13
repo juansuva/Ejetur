@@ -5,10 +5,10 @@
 {% url 'auth_login' as auth_login_url %}
 {% if account %}
 {% blocktrans %}
-Thanks {{ account }}, activation complete!
-You may now <a href='{{ auth_login_url }}'>login</a> using the username and password you set at registration.
+Gracias, Ahora puede{{ account }}, activacion completa!
+ Ahora puede <a href='{{ auth_login_url }}'>Iniciar sesion</a> Utilizando el nombre de usuario y la contraseña que estableció al registrarse.
 {% endblocktrans %}
 {% else %}
-{% blocktrans %}Oops &ndash; it seems that your activation key is invalid.  Please check the url again.{% endblocktrans %}
+{% blocktrans %}Oops &ndash; Parece que su clave de activación no es válida. Compruebe la url de nuevo.{% endblocktrans %}
 {% endif %}
 {% endblock %}

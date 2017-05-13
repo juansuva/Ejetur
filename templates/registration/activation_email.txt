@@ -1,15 +1,15 @@
 {% load i18n %}
 {% url 'registration_activate' activation_key as activation_key_url%}
 {% blocktrans with sitename=site.name siteurl=site.domain %}
-You (or someone pretending to be you) have asked to register an account at
-{{ sitename }}.  If this wasn't you, please ignore this email
-and your address will be removed from our records.
+Usted (o alguien que pretende ser usted) ha pedido que registre una cuenta en
+{{ sitename }}.  Si este no fuera usted, por favor ignore este correo electrónico y su dirección será eliminada.
+De nuestros registros.
 
-To activate this account, please click the following link within the next 
-{{ expiration_days }} days:
+Para activar esta cuenta, haga clic en el siguiente enlace dentro de los siguientes
+{{ expiration_days }} dias:
 
 http://{{ siteurl }}{{ activation_key_url }}
 
-Sincerely,
-{{ sitename }} Management
+Sinceramente,
+{{ sitename }} Administrador
 {% endblocktrans %}

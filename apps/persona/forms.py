@@ -16,9 +16,7 @@ class PersonaForms(forms.ModelForm):
 			'direccion',
 			'telefono',
 			'celular',
-			'fecha_incripcion',
-			'prioridad',
-			'email',
+
 			'edad',
 			'sexo',
 			'estado',
@@ -56,8 +54,8 @@ class PersonaForms(forms.ModelForm):
 			'email': forms.EmailInput(attrs={'class':'form-control'}),
 			'edad': forms.NumberInput(attrs={'class':'form-control'}),
 			'sexo': forms.Select(attrs={'class':'form-control'}),
-			'estado':forms.TextInput(attrs={'class':'form-control'}),
+			'estado':forms.NumberInput(attrs={'class':'form-control'}),
 			'solicitud':forms.NumberInput(attrs={'class':'form-control'}),
-			'password':forms.NumberInput(attrs={'class':'form-control'}),
-			'intereses':forms.CheckboxSelectMultiple(attrs={'class':'form-control'}),
+			'password':forms.TextInput(attrs={'class':'form-control'}),
+			'intereses':forms.CheckboxSelectMultipl(),
 		}
