@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <title>Eje Turismo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="{% static "landing_page/css/bootstrap.min.css" %}" />
+    <link rel="stylesheet" href="{% static "landing_page/css/animate.min.css" %}" />
+    <link rel="stylesheet" href="{% static "landing_page/css/ionicons.min.css" %}" />
+    <link rel="stylesheet" href="{% static "landing_page/css/styles.css" %}" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="material-icons">flight</i> Eje Turismo</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+            </div>
+        </div>
+    </nav>
+    <header id="first" style='background-image: url("{% static "/assets/viaducto.jpg" %}");'>
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Eje Turismo</h1>
+                <h4>Disfruta de cada detalle de tu ciudad con solo un clic</h4>
+                <hr>
+                <a href="/login"class="btn btn-primary btn-xl">Iniciar sesión</a> &nbsp; <a href="/registro" class="btn btn-primary btn-xl page-scroll">Registrarse</a>
+            </div>
+        </div>
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </header>
+    <section id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="margin-top-0 text-primary">Flexible Layouts</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Responsive</h3>
+                        <p class="text-muted">Your site looks good everywhere</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-social-sass wow fadeInUp" data-wow-delay=".2s"></i>
+                        <h3>Customizable</h3>
+                        <p class="text-muted">Easy to theme and customize with SASS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-ios-star-outline wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Consistent</h3>
+                        <p class="text-muted">A mature, well-tested, stable codebase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer teal darken-2" style="bottom:0; width:100%;">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Eje Turismo</h5>
+            <p class="grey-text text-lighten-4">Universidad Tecnológica de Pereira</p>
+            <a class="grey-text text-lighten-4" href="/access/root">Accesso root</a>
+            <p class="grey-text text-lighten-4">© 2017 Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="{% static "landing_page/js/jquery.min.js" %}"></script>
+    <script src="{% static "landing_page/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "landing_page/js/jquery.easing.min.js" %}"></script>
+    <script src="{% static "landing_page/js/wow.js" %}"></script>
+    <script src="{% static "landing_page/js/scripts.js" %}"></script>
+  </body>
+</html>
